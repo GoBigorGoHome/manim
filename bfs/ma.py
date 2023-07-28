@@ -26,7 +26,7 @@ def label(scn, r, c):
         info.move_to(np.array([-5, 3, 0]))
     else:
         info.next_to(g[-1])
-    scn.play(Create(dist))
+    scn.add(dist)
     scn.play(ReplacementTransform(dots[(r,c)].copy(), info))
     g.add(info)
 
@@ -56,6 +56,7 @@ def bfs(r, c, scn):
                 scn.play(FadeOut(a), run_time=0.5)
         scn.play(dots[(r,c)].animate.set_fill(RED),
                  FadeOut(info))
+
 
 class BFS(Scene):
     def construct(self):

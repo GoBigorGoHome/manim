@@ -1,0 +1,9 @@
+*.mp4
+*.svg
+*.aux
+*.tex
+*.xdv
+*.dvi
+*.log
+*.pyc
+*/media/*
